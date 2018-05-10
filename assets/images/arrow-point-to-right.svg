@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="6px" viewBox="0 0 11 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-point-to-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-820.000000, -616.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Group-11" transform="translate(0.000000, -5.000000)">
+                <g id="Group-5" transform="translate(732.000000, 137.000000)">
+                    <g id="Group-10" transform="translate(0.000000, 458.000000)">
+                        <g id="Form">
+                            <g id="Input-Field---E-mail">
+                                <g id="arrow-point-to-right" transform="translate(93.255814, 29.000000) rotate(90.000000) translate(-93.255814, -29.000000) translate(90.255814, 23.744186)">
+                                    <path d="M5.77769767,5.77423256 L1.25939535,10.2923953 C0.971976744,10.5799535 0.505976744,10.5799535 0.218697674,10.2923953 C-0.0686046512,10.005093 -0.0686046512,9.53911628 0.218697674,9.25183721 L4.21669767,5.25395349 L0.218813953,1.2562093 C-0.0684883721,0.968790698 -0.0684883721,0.502860465 0.218813953,0.21555814 C0.506116279,-0.0718604651 0.972093023,-0.0718604651 1.25951163,0.21555814 L5.77781395,4.7337907 C5.92146512,4.87751163 5.9932093,5.06567442 5.9932093,5.25393023 C5.9932093,5.44227907 5.92132558,5.6305814 5.77769767,5.77423256 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

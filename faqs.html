@@ -1,0 +1,97 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vifo Website</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="mainabout">
+		<div class="headerNav">
+			<div class="logoheader">
+					<img src="assets/images/logo.svg">
+			</div>
+			<div class="headerlinks">
+				<a href="about.html">ABOUT US</a>
+				<a class="active" href="faqs.html">FAQS</a>
+				<a href="terms.html">TERMS OF USE</a>
+				<a href="privacy.html">PRIVACY POLICY</a>
+			</div>
+			<div class="icons">
+				<a href="#">
+					<img src="assets/images/Twitter_header.svg">
+				</a>
+				<a href="#">
+					<img src="assets/images/Facebook_header.svg">
+				</a>
+				<a href="#">
+					<img src="assets/images/YouTube_header.svg">
+				</a>
+				<a href="#">
+					<img src="assets/images/Google_header.svg">
+				</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="heading">Frequently asked Questions</div>
+			<div class="headingcontent">New user? Let’s get started with these basics.</div>
+			<div class="button accordion first">
+				<div>
+					Question number 01 goes in here?
+				</div>
+				<div>
+					<img src="assets/images/plus-circle.svg" class="plusicon">	
+				</div>
+			</div>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+			<div class="button accordion">
+				<div>
+					Question number 02 goes in here?
+				</div>
+				<div>
+					<img src="assets/images/plus-circle.svg" class="plusicon">	
+				</div>
+			</div>
+
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+			<div class="button accordion">
+				<div>
+					Question number 03 goes in here?
+				</div>
+				<div>
+					<img src="assets/images/plus-circle.svg" class="plusicon">	
+				</div>
+			</div>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		    acc[i].addEventListener("click", function() {
+		        this.classList.toggle("active");
+		        console.log(this.getElementsByClassName("plusicon"))
+		        this.getElementsByClassName("plusicon")[0].src="assets/images/minus Cisrcle.svg";
+		        var panel = this.nextElementSibling;
+		        if (panel.style.display === "block") {
+		        	this.getElementsByClassName("plusicon")[0].src="assets/images/plus-circle.svg";
+		            panel.style.display = "none";
+		        } else {
+		            panel.style.display = "block";
+		        }
+		    });
+		}
+	</script>
+	</body>
+</html>
