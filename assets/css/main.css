@@ -361,3 +361,18 @@ input:focus {
 .first {
 	border: none !important;
 }
+
+@media(max-width: 1100px) {
+	.content {
+		width: 90%;
+	}
+
+	.headerNav {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.headerNav div {
+		margin-top: 10px;
+	}
+}
