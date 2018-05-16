@@ -24,6 +24,8 @@ body {
 .header {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 18px;
+	justify-content: space-around;
 }
 
 
@@ -31,15 +33,16 @@ body {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
-	margin-left: 175px;
+	margin-left: 10%;
+	max-width: 220px;
 }
 
 .halfRight {
-	flex-grow: 2;
 	justify-content: flex-start;
 	color: white;
 	margin-top: 124px;
-	max-width: 730px;
+	width: 50%;
+	padding: 10px;
 }
 
 .logo {
@@ -51,20 +54,35 @@ body {
 	cursor: pointer;
 }
 
+.intro {
+	height: 450px;
+	overflow: hidden;
+	margin-top: 10%;
+}
+
 .image1 img, .image2 img {
 	width: 220px;
 	height: auto;
 }
 
+@-webkit-keyframes slideup {
+    from {margin-top: 0px}
+    to {margin-top: -418px}
+}
+
+@keyframes slideup {
+    from {margin-top: 0px}
+    to {margin-top: -418px}
+}
+
 .image1 {
-	position: absolute;
-	top: 106px;
-	left: 350px;
+	position: relative;
+	animation: slideup 20s linear 2s infinite normal;
+	margin-bottom: 10%;
 }
 
 .image2 {
-	position: absolute;
-	top: 124px;
+	position: relative;
 }
 
 .halfRight h1 {
@@ -73,7 +91,6 @@ body {
 
 .shortDesc {
 	font-size: 18px;
-	width: 50%;
 	margin: 10px 0;
 }
 
@@ -121,7 +138,7 @@ body {
 	width: 390px;
 	outline: none;
 	height: 40px;
-	border-radius: 17px;
+	border-radius: 40px;
 	background-color: white;
 	display: flex;
 	align-items: center;
@@ -157,7 +174,7 @@ input:focus {
 .footer {
 	display: flex;
 	align-items: center;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	width: 100%;
 	height: 60px;
@@ -192,24 +209,21 @@ input:focus {
 }
 
 @media(max-width: 768px) {
-	.image1, .image2 {
-		display: none;
-	}
-
 	.header {
 		flex-direction: column;
 	}
 
 	.halfLeft {
-		margin-left: 20px;
+		margin: 0 auto;
 	}
 
 	.halfRight {
 		flex-grow: 1;
 		justify-content: center;
 		color: white;
-		max-width: 100%;
-		margin: 20px 20px;
+		width: 100%;
+		margin: 20px 0;
+		text-align: center;
 	}
 
 	.shortDesc {
@@ -228,43 +242,16 @@ input:focus {
 	}
 
 	.downloads {
-		margin-top: 10px;
-		flex-direction: column;
-	}
-
-	.downloads .googleplay {
-		margin-left: 0px;
-		margin-top: 10px;
+		margin: 10px 0;
+		justify-content: center;
 	}
 
 	.mobile {
-		margin-top: 10px;
-	}
-}
-
-@media(max-width: 1300px) {
-	.halfLeft {
-		margin-left: 100px;
+		margin: 0 auto;
 	}
 
-	.image1 {
-		left: 275px;
-	}
-}
-
-@media(max-width: 1220px) {
-	.halfLeft {
-		margin-left: 20px;
-	}
-
-	.image1 {
-		left: 225px;
-	}
-}
-
-@media(max-width: 1200px) {
-	.image1, .image2 {
-		display: none;
+	.check {
+		justify-content: center;
 	}
 }
 
