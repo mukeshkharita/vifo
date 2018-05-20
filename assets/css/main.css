@@ -26,6 +26,7 @@ body {
 	flex-direction: row;
 	margin-bottom: 18px;
 	justify-content: space-around;
+	min-height: 88vh;
 }
 
 
@@ -77,7 +78,7 @@ body {
 
 .image1 {
 	position: relative;
-	animation: slideup 20s linear 2s infinite normal;
+	animation: slideup 20s ease 2s infinite normal;
 	margin-bottom: 10%;
 }
 
@@ -151,6 +152,8 @@ body {
 
 .mobile input {
 	border: transparent;
+	padding: 0 4px;
+    width: 175px;
 }
 
 input:focus {
@@ -169,6 +172,9 @@ input:focus {
     padding: 7px 12px;
     font-size: 12px;
     cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
 }
 
 .footer {
@@ -182,6 +188,21 @@ input:focus {
 	padding: 10px 40px;
 	background-image: linear-gradient(0deg, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.00) 100%);
 	color: white;
+	justify-content: space-between;
+	letter-spacing: 1.5px;
+}
+
+.footerpages {
+	display: flex;
+	align-items: center;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	font-size: 12px;
+	padding: 10px 40px;
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.00) 100%);
+	color: #4A4A4A;
 	justify-content: space-between;
 	letter-spacing: 1.5px;
 }
@@ -253,6 +274,11 @@ input:focus {
 	.check {
 		justify-content: center;
 	}
+
+	.googleplay img, .appstore img {
+		height: 44px;
+		width: auto;
+	}
 }
 
 .headerNav {
@@ -281,7 +307,9 @@ input:focus {
 
 .content {
 	width: 60%;
-	margin: 60px auto;
+	min-height: 68.9vh;
+	margin: 60px auto 20px auto;
+	line-height: 1.2em;
 }
 
 .heading {
@@ -324,13 +352,13 @@ input:focus {
     background-color: white;
     overflow: hidden;
     font-size: 12px;
+    margin-bottom: 11px;
 }
 
 .button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 11px 0;
 	font-size: 16px;
 	cursor: pointer;
 	border-top: 1px solid #E1E1E1;
@@ -338,6 +366,10 @@ input:focus {
 
 .button:first {
 	border: none;
+}
+
+.dummy {
+	border-top: 1px solid #E1E1E1;
 }
 
 .button img {
@@ -351,7 +383,9 @@ input:focus {
 
 @media(max-width: 1100px) {
 	.content {
-		width: 90%;
+		width: 80%;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 
 	.headerNav {
@@ -362,4 +396,8 @@ input:focus {
 	.headerNav div {
 		margin-top: 10px;
 	}
+}
+
+.subcontent {
+	margin-left: 20px;
 }
